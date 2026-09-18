@@ -1,0 +1,119 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 235, 227);
+    flex-direction: column;
+}
+
+/* Rendre le design responsive sur mobile 375px */
+
+#product-card{
+    width: 510px;
+    height: 385px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 2%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.041);
+}
+
+#product-image{
+    width: 50%;
+    height: 100%;
+}
+
+#product-infos{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#product-category{
+    color: gray;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+#product-title{
+    font-family: "Fraunces", serif;
+    color: rgb(24, 24, 24);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#product-description{
+    color: gray;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#prices{
+    display: flex;
+    align-items: center;
+    margin-top: -15px; /*Pas idéal ici */
+}
+
+#reduction-price{
+    font-family: "Fraunces", serif;
+    color: rgb(56, 122, 56);
+    font-size: 26px;
+}
+
+#original-price{
+    color: gray;
+    font-weight: 500;
+    font-size: 11px;
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+#purchase-button{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+    border-radius: 6px;
+    background-color: rgb(56, 122, 56);
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: -5px; /*Pas idéal ici */
+}
+
+#purchase-button img{
+    width: 14px;
+    height: 14px;
+}
+
+#purchase-button:hover{
+    background-color: rgb(0, 70, 0);
+    transition: 200ms;
+}
+
+#purchase-button:focus{
+    background-color: rgb(190, 92, 35);
+    transition: 100ms;
+}
+
+.attribution{
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    color: gray;
+    margin-top: 15px;
+}
+
+.attribution a{
+    color: rgb(56, 122, 56);
+}
